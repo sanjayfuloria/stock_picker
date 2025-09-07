@@ -50,7 +50,7 @@ try:
 except Exception:
     pass
 
-from stock_picker.crew import StockPicker
+from .crew import StockPicker
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
