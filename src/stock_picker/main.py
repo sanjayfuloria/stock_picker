@@ -55,21 +55,18 @@ from stock_picker.crew import StockPicker
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 
-def run():
+def run(sector="Technology"):
     """
-    Run the research crew.
+    Run the research crew for a given sector.
     """
     inputs = {
-        'sector': 'Technology',
+        'sector': sector,
         "current_date": str(datetime.now())
     }
 
     # Create and run the crew
     result = StockPicker().crew().kickoff(inputs=inputs)
-
-    # Print the result
-    print("\n\n=== FINAL DECISION ===\n\n")
-    print(result.raw)
+    return result.raw
 
 
 if __name__ == "__main__":

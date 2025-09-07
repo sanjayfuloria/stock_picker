@@ -3,3 +3,5 @@ duckduckgo_search
 python-dotenv
 certifi
 gradio
+
+streamlit
