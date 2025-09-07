@@ -1,5 +1,5 @@
 import streamlit as st
-from src.stock_picker.main import run
+from stock_picker.main import run
 
 st.title("Stock Picker App")
 
